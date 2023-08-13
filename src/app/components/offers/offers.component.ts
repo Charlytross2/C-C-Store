@@ -9,7 +9,7 @@ import { Producto } from 'src/app/entities/producto';
 export class OffersComponent {
   public ofertaProductos: Producto[] = [
     {
-      foto: '../../../assets/gorra_levis.webp',
+      foto: './assets/gorra_levis.webp',
       nombre: 'Gorra Levis',
       categoria: 'Gorras',
       precio: 299,

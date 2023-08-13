@@ -9,14 +9,14 @@ import { Producto } from 'src/app/entities/producto';
 export class ShowProductsComponent {
   public productos: Producto[] = [
     {
-      foto: '../../../assets/reloj_negro.jpeg',
+      foto: './assets/reloj_negro.jpeg',
       nombre: 'Kit de reloj Luis Cardini',
       categoria: 'Relojeria',
       precio: 599,
       link : ''
     },
     {
-      foto: '../../../assets/reloj_cafe.jpeg',
+      foto: './assets/reloj_cafe.jpeg',
       nombre: 'Kit de reloj Luis Cardini',
       categoria: 'Relojeria',
       precio: 599,
