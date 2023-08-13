@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+<div class="presentation">
+  <h1 class="title-font">Productos</h1>
+  <img
+    class="presentation__img"
+    src="../../../assets/presentacion_store.png"
+    alt="presentacion_store"
+  />
+</div>
+<section class="products">
+  <div class="products__container" *ngFor="let producto of productos">
+    <img class="product-img" [src]="producto.foto" [alt]="producto.nombre" />
+    <span
+      ><strong>{{ producto.nombre }}</strong></span
+    >
+    <small>{{ producto.precio }}</small>
+    <a class="btn" [href]="producto.link" target="_blank">Comprar</a>
+  </div>
+</section>

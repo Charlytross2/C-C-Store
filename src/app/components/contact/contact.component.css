@@ -1,0 +1,59 @@
+.contact__container{
+    background-color: #E4D4C7;
+    text-align: center;
+    padding: 1rem;
+    min-height: 90vh;
+}
+
+.img__logo--store{
+    width: 30rem;
+    height: 20rem;
+    border-radius: 1rem;
+}
+
+.img-logo{
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem
+}
+
+.text-font--question{
+    font-size: 2rem;
+    margin: 1rem 0 1rem;
+}
+
+.text-black{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1.5rem;
+}
+
+.logo__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 769px) {
+    .text-font--question{
+        font-size: 3rem;
+    }
+
+    .text-black{
+        font-size: 2.5rem;
+    }
+
+    .logo__container{
+        justify-content: space-around;
+    }
+
+    .img__logo--store{
+        width: 40rem;
+        height: 25rem;
+    }
+}
+
+@media screen and (min-width: 1025px){
+}

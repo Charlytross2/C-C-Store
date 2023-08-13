@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+<section class="offers__container">
+  <h1 *ngIf="ofertaProductos.length !== 0" class="title-font">Ofertas</h1>
+  <div class="product__container">
+    <div class="offers__product" *ngFor="let producto of ofertaProductos">
+      <div class="product__img--icon">
+        <img
+          class="product-img"
+          [src]="producto.foto"
+          [alt]="producto.nombre"
+        />
+        <a target="_blank" [href]="producto.link"
+          ><span class="material-symbols-outlined cart">
+            shopping_cart
+          </span></a
+        >
+      </div>
+      <small class="product-name"
+        ><strong> {{ producto.nombre }}</strong></small
+      >
+      <p class="product-category">{{ producto.categoria }}</p>
+    </div>
+  </div>
+
+  <div *ngIf="ofertaProductos.length === 0">
+    <h3 class="offers_message">En este momento no contamos con ofertas</h3>
+  </div>
+</section>
